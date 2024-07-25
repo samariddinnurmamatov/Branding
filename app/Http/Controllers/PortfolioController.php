@@ -23,22 +23,10 @@ class PortfolioController extends Controller
 
     public function store(Request $request)
     {
-        $validated = $request->validate([
-            'title_uz' => 'nullable|string|max:255',
-            'title_ru' => 'nullable|string|max:255',
-            'title_en' => 'nullable|string|max:255',
-            'description_uz' => 'nullable|string',
-            'description_ru' => 'nullable|string',
-            'description_en' => 'nullable|string',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
-            'image1' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
-            'image2' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
-            'service_ids' => 'nullable|array',
-            'service_ids.*' => 'exists:services,id',
-        ]);
+        // Requestdan ma'lumotlarni olish
+        $data = $request->all();
 
-        $data = $validated;
-
+        // Faylni tekshirish va saqlash
         if ($request->hasFile('image')) {
             $data['image'] = $request->file('image')->store('post_photo');
         }
@@ -49,10 +37,12 @@ class PortfolioController extends Controller
             $data['image2'] = $request->file('image2')->store('post_photo');
         }
 
+        // Portfolio yaratish
         $portfolio = Portfolio::create($data);
 
-        if (!empty($validated['service_ids'])) {
-            $portfolio->services()->attach($validated['service_ids']);
+        // Xizmatlarni qo'shish
+        if (!empty($request->input('service_ids'))) {
+            $portfolio->services()->attach($request->input('service_ids'));
         }
 
         return redirect()->route('portfolios.index')->with('success', 'Portfolio created successfully.');
@@ -65,28 +55,16 @@ class PortfolioController extends Controller
 
     public function edit(Portfolio $portfolio)
     {
-        $service = Service::all();
-        return view('admin.portfolio.edit', compact('portfolio', 'service'));
+        $services = Service::all();
+        return view('admin.portfolio.edit', compact('portfolio', 'services'));
     }
 
     public function update(Request $request, Portfolio $portfolio)
     {
-        $validated = $request->validate([
-            'title_uz' => 'nullable|string|max:255',
-            'title_ru' => 'nullable|string|max:255',
-            'title_en' => 'nullable|string|max:255',
-            'description_uz' => 'nullable|string',
-            'description_ru' => 'nullable|string',
-            'description_en' => 'nullable|string',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
-            'image1' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
-            'image2' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg,webp|max:2048',
-            'service_ids' => 'nullable|array',
-            'service_ids.*' => 'exists:services,id',
-        ]);
+        // Requestdan ma'lumotlarni olish
+        $data = $request->all();
 
-        $data = $validated;
-
+        // Faylni tekshirish va saqlash
         if ($request->hasFile('image')) {
             if ($portfolio->image) {
                 Storage::delete($portfolio->image);
@@ -106,10 +84,12 @@ class PortfolioController extends Controller
             $data['image2'] = $request->file('image2')->store('post_photo');
         }
 
+        // Portfolio yangilash
         $portfolio->update($data);
 
-        if (!empty($validated['service_ids'])) {
-            $portfolio->services()->sync($validated['service_ids']);
+        // Xizmatlarni yangilash
+        if (!empty($request->input('service_ids'))) {
+            $portfolio->services()->sync($request->input('service_ids'));
         } else {
             $portfolio->services()->detach();
         }
@@ -119,6 +99,7 @@ class PortfolioController extends Controller
 
     public function destroy(Portfolio $portfolio)
     {
+        // Fayllarni o'chirish
         if ($portfolio->image) {
             Storage::delete($portfolio->image);
         }
@@ -129,6 +110,7 @@ class PortfolioController extends Controller
             Storage::delete($portfolio->image2);
         }
 
+        // Portfolio o'chirish
         $portfolio->delete();
 
         return redirect()->back();
