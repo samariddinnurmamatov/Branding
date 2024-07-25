@@ -1,9 +1,8 @@
-<?=
+<php
 
 $lang = \Illuminate\Support\Facades\App::getLocale();
 
 ?>
-
 
 <x-layouts.main>
     <!-- Main -->
@@ -14,9 +13,9 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
             <div id="hero-styles">
                 <div id="hero-caption" class="content-full-width parallax-scroll-caption text-align-center height-title">
                     <div class="inner">
-                        <h1 class="hero-title caption-timeline primary-font-title"><span>Our Studio</span></h1>
+                        <h1 class="hero-title caption-timeline primary-font-title"><span>Bizning Studio</span></h1>
                         <div class="hero-subtitle caption-timeline">
-                            <span>WE ARE A CREATIVE STUDIO, SPECIALIZED IN STRATEGY, BRANDING <br class="destroy"> DESIGN, AND DEVELOPMENT. OUR WORK IS ALWAYS AT THE INTERSECTION <br class="destroy"> OF DESIGN AND TECHNOLOGY.</span>
+                            <span>BIZ YARATILISH STUDIOSI, STRATEGIYA, BRENDING <br class="destroy"> DIZAYN VA RIVOJLANTIRISH BO'YICHA MAXSUSLAŠTIRILGANMIZ. BIZNING ISHLARIMIZ HAR DOIM <br class="destroy"> DIZAYN VA TEXNOLOGIYANING CHORRAHASIDA BO'LIB TURIADI.</span>
                         </div>
                     </div>
                 </div>
@@ -28,11 +27,11 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                             </div>
-                            <div class="button-text sticky right"><span data-hover="Scroll to Explore">Scroll to Explore</span></div>
+                            <div class="button-text sticky right"><span data-hover="Kashf etishga o'tish">Kashf etishga o'tish</span></div>
                         </div>
                     </div>
                     <div class="hero-footer-right">
-                        <div id="info-text">Our Short Story</div>
+                        <div id="info-text">Bizning Qisqa Hikoyamiz</div>
                     </div>
                 </div>
             </div>
@@ -53,7 +52,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 
                         <div class="clipped-image-pin">
                             <div class="clipped-image">
-                                <img src="/front/images/about.jpg" alt="Image Title">
+                                <img src="/front/images/about.jpg" alt="Rasm Sarlavhasi">
                                 <div class="content-video-wrapper">
                                     <video loop muted playsinline class="bgvid">
                                         <source src="/front/images/about.mp4" type="video/mp4">
@@ -81,8 +80,8 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                     <div class="move-thumbs-wrapper">
 
                         <div class="start-thumbs-caption">
-                            <h2 class="primary-font-title big-title has-mask-fill">Recognitions</h2>
-                            <p>OUR PRESTIGIOUS DESIGN AWARDS</p>
+                            <h2 class="primary-font-title big-title has-mask-fill">E'tiroflar</h2>
+                            <p>BEZMATLI DIZAYN SOVRINLARIMIZ</p>
                         </div>
 
 
@@ -164,7 +163,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 
                     <div class="pinned-section">
                         <div class="pinned-element left">
-                            <h2 class="big-title primary-font-title no-margins"><span class="has-mask-fill">Our</span><br><span class="has-mask-fill">Services</span></h2>
+                            <h2 class="big-title primary-font-title no-margins"><span class="has-mask-fill">Bizning</span><br><span class="has-mask-fill">Xizmatlarimiz</span></h2>
                         </div>
 
                         <div class="scrolling-element right">
@@ -182,94 +181,94 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 
                                 @endforeach
                                 <dt>
-                                    <span class="link"><div>Mobile App Development</div></span>
+                                    <span class="link"><div>Mobil Ilova Rivojlantirish</div></span>
                                     <div class="acc-icon-wrap parallax-wrap">
                                         <div class="acc-button-icon parallax-element">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
                                     </div>
                                 </dt>
-                                <dd class="accordion-content">Our team crafts innovative and feature-rich mobile applications that cater to the needs of modern users.</dd>
+                                <dd class="accordion-content">Jamoamiz innovatsion va imkoniyatlarga boy mobil ilovalarni yaratadi, zamonaviy foydalanuvchilarning ehtiyojlariga mos keladi.</dd>
 
                                 <dt>
-                                    <span class="link"><div>E-Commerce Solutions</div></span>
+                                    <span class="link"><div>E-Tijorat Yechimlari</div></span>
                                     <div class="acc-icon-wrap parallax-wrap">
                                         <div class="acc-button-icon parallax-element">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
                                     </div>
                                 </dt>
-                                <dd class="accordion-content">We build seamless online shopping experiences that empower businesses to reach customers globally.</dd>
+                                <dd class="accordion-content">Biz bizneslarga global darajada mijozlarga yetib borish imkoniyatini beruvchi muammosiz onlayn xarid qilish tajribalarini yaratamiz.</dd>
 
                                 <dt>
-                                    <span class="link"><div>Digital Marketing</div></span>
+                                    <span class="link"><div>Raqamli Marketing</div></span>
                                     <div class="acc-icon-wrap parallax-wrap">
                                         <div class="acc-button-icon parallax-element">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
                                     </div>
                                 </dt>
-                                <dd class="accordion-content">Our strategic digital marketing campaigns help businesses amplify their online presence and achieve their growth goals.</dd>
+                                <dd class="accordion-content">Bizning strategik raqamli marketing kampaniyalarimiz bizneslarga onlayn mavjudligini oshirish va o'sish maqsadlariga erishishga yordam beradi.</dd>
 
                                 <dt>
-                                    <span class="link"><div>UI/UX Design</div></span>
+                                    <span class="link"><div>UI/UX Dizayni</div></span>
                                     <div class="acc-icon-wrap parallax-wrap">
                                         <div class="acc-button-icon parallax-element">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
                                     </div>
                                 </dt>
-                                <dd class="accordion-content">We design intuitive and visually appealing user interfaces that enhance user experiences and streamline interactions.</dd>
+                                <dd class="accordion-content">Biz intuitiv va vizual jihatdan jozibali foydalanuvchi interfeyslari dizaynini yaratamiz, foydalanuvchi tajribasini yaxshilaydi va o'zaro ta'sirlarni soddalashtiradi.</dd>
 
                                 <dt>
-                                    <span class="link"><div>Brand Strategy</div></span>
+                                    <span class="link"><div>Brend Strategiyasi</div></span>
                                     <div class="acc-icon-wrap parallax-wrap">
                                         <div class="acc-button-icon parallax-element">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
                                     </div>
                                 </dt>
-                                <dd class="accordion-content"> Our brand strategists develop strong and compelling brand identities that resonate with target audiences.</dd>
+                                <dd class="accordion-content">Bizning brend strateglarimiz kuchli va ta'sirli brend identifikatsiyalarini rivojlantiradi, ular maqsadli auditoriya bilan rezonansga erishadi.</dd>
 
                                 <dt>
-                                    <span class="link"><div>SEO Optimization</div></span>
+                                    <span class="link"><div>SEO Optimallashtirish</div></span>
                                     <div class="acc-icon-wrap parallax-wrap">
                                         <div class="acc-button-icon parallax-element">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
                                     </div>
                                 </dt>
-                                <dd class="accordion-content">We optimize websites to improve search engine visibility, driving organic traffic and increasing online visibility.</dd>
+                                <dd class="accordion-content">Biz veb-saytlarni qidiruv tizimlarida ko'rinishini yaxshilash uchun optimallashtiramiz, organik trafikni oshiradi va onlayn ko'rinishni oshiradi.</dd>
 
                                 <dt>
-                                    <span class="link"><div>Social Media Management</div></span>
+                                    <span class="link"><div>Ijro Etish Vositasi</div></span>
                                     <div class="acc-icon-wrap parallax-wrap">
                                         <div class="acc-button-icon parallax-element">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
                                     </div>
                                 </dt>
-                                <dd class="accordion-content">Our social media experts manage and curate engaging content, fostering meaningful connections with audiences.</dd>
+                                <dd class="accordion-content">Bizning ijtimoiy media mutaxassislarimiz qiziqarli kontentni boshqaradi va tuzadi, auditoriya bilan ma'noli aloqalarni rivojlantiradi.</dd>
 
                                 <dt>
-                                    <span class="link"><div>Content Creation</div></span>
+                                    <span class="link"><div>Kontent Yaratish</div></span>
                                     <div class="acc-icon-wrap parallax-wrap">
                                         <div class="acc-button-icon parallax-element">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
                                     </div>
                                 </dt>
-                                <dd class="accordion-content">Our creative team produces compelling and impactful content that tells your brand's story and captivates your audience.</dd>
+                                <dd class="accordion-content">Bizning ijodiy jamoamiz sizning brendingiz hikoyasini aytib beradigan va auditoriyangizni jalb qiladigan ta'sirli va ta'sirli kontent yaratadi.</dd>
 
                                 <dt>
-                                    <span class="link"><div>Data Analytics</div></span>
+                                    <span class="link"><div>Ma'lumotlar Tahlili</div></span>
                                     <div class="acc-icon-wrap parallax-wrap">
                                         <div class="acc-button-icon parallax-element">
                                             <i class="fa fa-arrow-right"></i>
                                         </div>
                                     </div>
                                 </dt>
-                                <dd class="accordion-content">We analyze data to uncover valuable insights and guide data-driven decision-making for business growth and success.</dd>
+                                <dd class="accordion-content">Biz ma'lumotlarni tahlil qilib, qimmatli tushunchalarni ochib beradi va biznesning o'sishi va muvaffaqiyati uchun ma'lumotlarga asoslangan qarorlar qabul qilishga yo'naltiradi.</dd>
                             </dl>
                         </div>
                     </div>
@@ -283,8 +282,8 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                 <!-- Row -->
                 <div class="content-row full row_padding_top row_padding_left row_padding_right text-align-center dark-section" data-bgcolor="#0c0c0c">
 
-                    <h2 class="big-title primary-font-title"><span class="has-mask-fill">Collaborators</span></h2>
-                    <p>WE DEVELOP GORGEOUS AND MEMORABLE <br class="destroy"> PROJECTS FOR OUR CLIENTS.</p>
+                    <h2 class="big-title primary-font-title"><span class="has-mask-fill">Hamkorlar</span></h2>
+                    <p>Biz mijozlarimiz uchun ajoyib va esda qolarli <br class="destroy"> loyihalarni ishlab chiqamiz.</p>
                     <hr><hr>
 
 
@@ -360,29 +359,28 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                     <ul class="team-members-list" data-fx="1">
                         @foreach($teams as $team)
                             <li class="link has-hover-image" data-img="images/team1.jpg">
-                                <div class="team-member has-animation"><span>Since 2010</span><div class="primary-font-title">{{ $team->name }}</div><span>{!! $team['description_' . $lang] !!}</span></div>
+                                <div class="team-member has-animation"><span>2010 yildan beri</span><div class="primary-font-title">{{ $team->name }}</div><span>{!! $team['description_' . $lang] !!}</span></div>
                             </li>
                         @endforeach
                         <li class="link has-hover-image" data-img="images/team1.jpg">
-                            <div class="team-member has-animation"><span>Since 2010</span><div class="primary-font-title">Tom Harrison</div><span>Web Designer</span></div>
+                            <div class="team-member has-animation"><span>2010 yildan beri</span><div class="primary-font-title">Tom Harrison</div><span>Web Dizayner</span></div>
                         </li>
                         <li class="link has-hover-image" data-img="images/team2.jpg">
-                            <div class="team-member has-animation"><span>Since 2012</span><div class="primary-font-title">Ricky Romano</div><span>UX Designer</span></div>
+                            <div class="team-member has-animation"><span>2012 yildan beri</span><div class="primary-font-title">Ricky Romano</div><span>UX Dizayner</span></div>
                         </li>
                         <li class="link has-hover-image" data-img="images/team3.jpg">
-                            <div class="team-member has-animation"><span>Since 2014</span><div class="primary-font-title">Jane Reeves</div><span>Art Director</span></div>
+                            <div class="team-member has-animation"><span>2014 yildan beri</span><div class="primary-font-title">Jane Reeves</div><span>San'at Direktori</span></div>
                         </li>
                         <li class="link has-hover-image" data-img="images/team4.jpg">
-                            <div class="team-member has-animation"><span>Since 2016</span><div class="primary-font-title">Billy Craft</div><span>Developer</span></div>
+                            <div class="team-member has-animation"><span>2016 yildan beri</span><div class="primary-font-title">Billy Craft</div><span>Dasturchi</span></div>
                         </li>
                         <li class="link has-hover-image" data-img="images/team5.jpg">
-                            <div class="team-member has-animation"><span>Since 2018</span><div class="primary-font-title">Cheryl Mezines</div><span>Support Guy</span></div>
+                            <div class="team-member has-animation"><span>2018 yildan beri</span><div class="primary-font-title">Cheryl Mezines</div><span>Qo'llab-quvvatlash</span></div>
                         </li>
                     </ul>
 
                 </div>
                 <!--/Row -->
-
 
 
 
@@ -395,9 +393,9 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                 <div class="page-nav-wrap">
                     <div class="page-nav-caption content-full-width text-align-center height-title">
                         <div class="inner">
-                            <div class="next-hero-subtitle caption-timeline"><span>CONTACT US AND LET'S BRING YOUR VISION TO LIFE</span></div>
-                            <a class="page-title next-ajax-link-page" data-type="page-transition" data-centerline="Say Hey" href="/contacts">
-                                <div class="next-hero-title primary-font-title caption-timeline"><span>Contact</span></div>
+                            <div class="next-hero-subtitle caption-timeline"><span>Biz bilan bog'laning va tasavvuringizni hayotga o'tkazing</span></div>
+                            <a class="page-title next-ajax-link-page" data-type="page-transition" data-centerline="Bog'lanish" href="/contacts">
+                                <div class="next-hero-title primary-font-title caption-timeline"><span>Kontakt</span></div>
                             </a>
                         </div>
                     </div>

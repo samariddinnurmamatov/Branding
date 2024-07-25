@@ -4,7 +4,6 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
 
 ?>
 
-
 <x-layouts.main>
     <!-- Main -->
     <div id="main">
@@ -14,9 +13,9 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
             <div id="hero-styles">
                 <div id="hero-caption" class="content-full-width parallax-scroll-caption text-align-center height-title">
                     <div class="inner">
-                        <h1 class="hero-title caption-timeline primary-font-title"><span>BRENDING</span></h1>
+                        <h1 class="hero-title caption-timeline primary-font-title"><span>BRANDING</span></h1>
                         <div class="hero-subtitle caption-timeline">
-                            <span>WE ARE A CREATIVE STUDIO, SPECIALIZED IN STRATEGY, BRANDING <br class="destroy"> DESIGN, AND DEVELOPMENT. OUR WORK IS ALWAYS AT THE INTERSECTION <br class="destroy"> OF DESIGN AND TECHNOLOGY.</span>
+                            <span>BIZ STRATEGIYA, BRANDING <br class="destroy"> DIZAYN VA RIVOJLANISHGA IXTISOSLASHGAN YANGILIK STUDIYASIYAMIZ. BIZNING ISHLARIMIZ DOIM DIZAYN VA TEXNOLOGIYANING <br class="destroy"> KESISHI JOYLARIDA BOLADI.</span>
                         </div>
                     </div>
                 </div>
@@ -28,11 +27,11 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                             </div>
-                            <div class="button-text sticky right"><span data-hover="Scroll to Explore">Scroll to Explore</span></div>
+                            <div class="button-text sticky right"><span data-hover="Tadqiq etish uchun pastga aylantiring">Tadqiq etish uchun pastga aylantiring</span></div>
                         </div>
                     </div>
                     <div class="hero-footer-right">
-                        <div id="info-text">Featured Projects</div>
+                        <div id="info-text">Tavsiya etilgan loyihalar</div>
                     </div>
                 </div>
             </div>
@@ -85,7 +84,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                         <div class="slide-caption trigger-item-link-secondary">
                                             <div class="slide-title primary-font-title"><span>Green Audio</span></div>
                                             <div class="slide-date"><span>2024</span></div>
-                                            <div class="slide-cat"><span>Photography</span></div>
+                                            <div class="slide-cat"><span>Fotografiya</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -124,7 +123,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                         <div class="slide-caption trigger-item-link-secondary">
                                             <div class="slide-title primary-font-title"><span>Cool Dude</span></div>
                                             <div class="slide-date"><span>2024</span></div>
-                                            <div class="slide-cat"><span>Video Production</span></div>
+                                            <div class="slide-cat"><span>Video ishlab chiqarish</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -141,7 +140,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                         <div class="slide-caption trigger-item-link-secondary">
                                             <div class="slide-title primary-font-title"><span>Sphere Digital</span></div>
                                             <div class="slide-date"><span>2024</span></div>
-                                            <div class="slide-cat"><span>Graphic Design</span></div>
+                                            <div class="slide-cat"><span>Grafik Dizayn</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -154,9 +153,9 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                     <hr>
 
                     <p>
-                        <span class="has-opacity">CRAFTING WEBSITES WHERE THE ELEGANCE</span>
+                        <span class="has-opacity">VEB-SAYTLARNI YASASHDA KAMOLAT</span>
                         <br class="destroy">
-                        <span class="has-opacity">OF DESIGN INTERSECTS WITH THE SCIENCE OF SELLING PRODUCTS.</span>
+                        <span class="has-opacity">DIZAYNNING ELEGANTLIGI VA MAHSULOTLARNI SOTISH ILMI BILAN KESISHADI.</span>
                     </p>
 
                     <div class="button-box text-align-center has-animation fadeout-element">
@@ -164,7 +163,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                             <div class="clapat-button parallax-element">
                                 <div class="button-border outline rounded parallax-element-second">
                                     <a class="ajax-link" href="/portfolio" data-type="page-transition">
-                                        <span data-hover="See All Works">See All Works</span>
+                                        <span data-hover="Barcha ishlarni ko'rish">Barcha ishlarni ko'rish</span>
                                     </a>
                                 </div>
                             </div>
@@ -180,18 +179,18 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                 <div class="content-row full row_padding_left row_padding_right dark-section fadeout-element" data-bgcolor="#0c0c0c">
 
                     <div class="list-rotator-wrapper">
-                        <div class="list-rotator-title">OUR SKILLS SERVICE</div>
+                        <div class="list-rotator-title">BIZNING MAHORAT XIZMATLARIMIZ</div>
                         <div class="list-rotator-pin">
                             <ul class="list-rotator primary-font-title">
                                 @foreach($services as $service)
                                     <li class="">{{ $service['title_' . $lang] }}</li>
                                 @endforeach
-                                <li>Mobile App Development</li>
-                                <li>UI/UX Design</li>
-                                <li>SEO Optimization</li>
-                                <li>Social Media Management</li>
-                                <li>Data Analytics</li>
-                                <li>Content Creation</li>
+                                <li>Mobil Ilova Rivojlantirish</li>
+                                <li>UI/UX Dizayn</li>
+                                <li>SEO Optimizatsiya</li>
+                                <li>Social Media Boshqaruvi</li>
+                                <li>Ma'lumotlarni Tahlil Qilish</li>
+                                <li>Kontent Yaratish</li>
                             </ul>
                         </div>
                     </div>
@@ -225,7 +224,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                 </div>
                                 <div class="box-icon-content">
                                     <h6 class="no-margins">{{ $con->address }}</h6>
-                                    <p>Address</p>
+                                    <p>Manzil</p>
                                 </div>
                             </div>
 
@@ -239,7 +238,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                 </div>
                                 <div class="box-icon-content">
                                     <h6 class="no-margins"><a href="tel:{{ $con->phone }}" class="no-margins">{{ $con->phone }}</a></h6>
-                                    <p>Phone</p>
+                                    <p>Telefon</p>
                                 </div>
                             </div>
 
@@ -261,9 +260,9 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                 <div class="page-nav-wrap">
                     <div class="page-nav-caption content-full-width text-align-center height-title">
                         <div class="inner">
-                            <div class="next-hero-subtitle caption-timeline"><span>EXPLORING OUR WORLD OF VISUAL AND INTERACTIVE DESIGN</span></div>
+                            <div class="next-hero-subtitle caption-timeline"><span>VISUAL VA INTERAKTIV DIZAYN OLAMIMIZNI O’RGANISH</span></div>
                             <a class="page-title next-ajax-link-page" data-type="page-transition" data-centerline="ABOUT US" href="/about">
-                                <div class="next-hero-title primary-font-title caption-timeline"><span>Our Studio</span></div>
+                                <div class="next-hero-title primary-font-title caption-timeline"><span>Bizning Studio</span></div>
                             </a>
                         </div>
                     </div>
