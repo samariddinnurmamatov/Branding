@@ -61,7 +61,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                     <div class="slide-caption trigger-item-link-secondary">
                                         <div class="slide-title"><span>{{ $portfolio['title_' . $lang] }}</span></div>
                                         @foreach ($portfolio->services as $service)
-                                            <div class="slide-cat"><span>{{ $service['title_' . $lang] }}</span></div>
+                                        <div class="slide-cat"><span>{{ $service['title_' . $lang] }}</span></div>
                                         @endforeach
                                     </div>
                                 </div>
@@ -82,7 +82,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                     <div class="slide-caption trigger-item-link-secondary">
                                         <div class="slide-title"><span>{{ $portfolio['title_' . $lang] }}</span></div>
                                         @foreach ($portfolio->services as $service)
-                                            <div class="slide-cat"><span>{{ $service['title_' . $lang] }}</span></div>
+                                        <div class="slide-cat"><span>{{ $service['title_' . $lang] }}</span></div>
                                         @endforeach
                                     </div>
                                 </div>
@@ -103,7 +103,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                     <div class="slide-caption trigger-item-link-secondary">
                                         <div class="slide-title"><span>{{ $portfolio['title_' . $lang] }}</span></div>
                                         @foreach ($portfolio->services as $service)
-                                            <div class="slide-cat"><span>{{ $service['title_' . $lang] }}</span></div>
+                                        <div class="slide-cat"><span>{{ $service['title_' . $lang] }}</span></div>
                                         @endforeach
                                     </div>
                                 </div>
@@ -126,8 +126,8 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                 <div class="page-nav-wrap">
                     <div class="page-nav-caption content-full-width text-align-center height-title">
                         <div class="inner">
-                            <div class="next-hero-subtitle caption-timeline"><span>EXPLORING OUR WORLD OF VISUAL AND INTERACTIVE DESIGN</span></div>
-                            <a class="page-title next-ajax-link-page" data-type="page-transition" data-centerline="ARCHIVE" href="/portfolio">
+                            <div class="next-hero-subtitle caption-timeline"><span>VIZUAL VA INTERAKTIV DIZAYN OLAMINI KASHF ETISH</span></div>
+                            <a class="page-title next-ajax-link-page" data-type="page-transition" data-centerline="ARXIV" href="/portfolio">
                                 <div class="next-hero-title primary-font-title caption-timeline"><span>The</span> <span>Archive</span></div>
                             </a>
                         </div>
@@ -135,6 +135,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                 </div>
             </div>
             <!--/Page Navigation -->
+
 
 
         </div>
