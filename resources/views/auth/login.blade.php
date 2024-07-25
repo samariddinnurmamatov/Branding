@@ -4,12 +4,12 @@
             <div class="card-body p-4">
 
                 <div class="text-center w-75 mx-auto auth-logo mb-4">
-                    <a href="#" class="logo-dark">
-                        <span><img src="/front/wp-content/uploads/2023/02/logo.png" alt="imkon-plast" data-eio="l" style="width: 70px"></span>
+                    <a href="javascript:void(0)" class="logo-dark">
+                        <span><img src="/front/favicon-32x32.png" alt="Branding" data-eio="l" style="width: 70px; color:black;"></span>
                     </a>
 
-                    <a href="#" class="logo-light">
-                        <span><img src="/front/wp-content/uploads/2023/02/logo.png" alt="imkon-plast" data-eio="l" style="width: 70px"></span>
+                    <a href="javascript:void(0)" class="logo-light">
+                        <span><img src="/front/favicon-32x32.png" alt="Branding" data-eio="l" style="width: 70px;color:black;"></span>
                     </a>
                 </div>
 
@@ -33,12 +33,6 @@
                         @enderror
                     </div>
 
-                    <div class="form-group mb-3">
-                        <div class="">
-                            <input class="form-check-input" type="checkbox" id="checkbox-signin" checked>
-                            <label class="form-check-label ms-2" for="checkbox-signin">Remember me</label>
-                        </div>
-                    </div>
 
                     <div class="form-group mb-0 text-center">
                         <button class="btn btn-primary w-100" type="submit"> Log In </button>
@@ -49,12 +43,7 @@
         </div>
         <!-- end card -->
 
-        <div class="row mt-3">
-            <div class="col-12 text-center">
-                <p class="text-white-50"> <a href="#" class="text-white-50 ms-1">Forgot your password?</a></p>
-                {{--                <p class="text-white-50">Don't have an account? <a href="pages-register.html" class="text-white font-weight-medium ms-1">Sign Up</a></p>--}}
-            </div> <!-- end col -->
-        </div>
+        
         <!-- end row -->
 
     </div>
