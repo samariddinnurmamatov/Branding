@@ -43,7 +43,7 @@
 
                         <div id="message"></div>
 
-                        <form method="post" action="{{ route('brief.store') }}" name="briefform" id="briefform">
+                        <form method="post" action="" name="briefform" id="briefform">
                             @csrf
                             <div class="form-group">
                                 <textarea name="project_name" id="project_name" cols="40" rows="2" placeholder="Project Name" required></textarea><label class="input_label slow"></label>
