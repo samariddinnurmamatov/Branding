@@ -69,8 +69,7 @@ Route::middleware(['checkRole:admin', 'auth'])->group(function () {
 Route::get('/', [MainController::class, 'index'])->name('index');
 Route::get('/about', [MainController::class, 'about'])->name('about');
 Route::get('/brief', [MainController::class, 'brief'])->name('brief');
-Route::get('/callcus', [CallController::class, 'create'])->name('call');
-Route::post('/callcus', [CallController::class, 'store'])->name('callcus.store');
+Route::post('/customer/contact', [CallController::class, 'customerContact'])->name('customer.contact');
 Route::get('/portfolio', [MainController::class, 'portfolio'])->name('portfolio');
 Route::get('/portfolio/{portfolio}', [MainController::class, 'singlePortfolio'])->name('singlePortfolio');
 Route::get('/contacts', [MainController::class, 'contacts'])->name('contacts');

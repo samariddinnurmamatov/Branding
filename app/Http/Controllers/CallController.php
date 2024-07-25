@@ -7,6 +7,16 @@ use Illuminate\Http\Request;
 
 class CallController extends Controller
 {
+    public function customerContact(Request $request){
+        $request->validate([
+            'full_name' => 'nullable|string|max:255',
+            'description' => 'nullable|string',
+            'phone_number' => 'nullable|string',
+        ]);
+
+        Call::create($request->all());
+        return redirect()->back()->with('success', "Habar Yuborildi!");
+    }
     public function index()
     {
         $calls = Call::all();
@@ -20,7 +30,6 @@ class CallController extends Controller
 
     public function store(Request $request)
     {
-        dd($request->all());
         $request->validate([
             'full_name' => 'nullable|string|max:255',
             'description' => 'nullable|string',
