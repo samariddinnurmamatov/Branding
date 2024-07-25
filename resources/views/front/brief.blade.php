@@ -8,7 +8,7 @@
                     <div class="inner">
                         <h1 class="hero-title caption-timeline primary-font-title"><span>Brief</span></h1>
                         <div class="hero-subtitle caption-timeline">
-                            <span>FILL OUT THE FORM BELOW TO PROVIDE US WITH THE DETAILS OF YOUR PROJECT.</span>
+                            <span>LOYIHANGIZ HAQIDA MA'LUMOT BERISH UCHUN FORMANI TO'LDIRING.</span>
                         </div>
                     </div>
                 </div>
@@ -20,11 +20,11 @@
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                             </div>
-                            <div class="button-text sticky right"><span data-hover="Scroll to Explore">Scroll to Explore</span></div>
+                            <div class="button-text sticky right"><span data-hover="Tadqiq etish uchun pastga aylantiring">Tadqiq etish uchun pastga aylantiring</span></div>
                         </div>
                     </div>
                     <div class="hero-footer-right">
-                        <div id="info-text">Featured Projects</div>
+                        <div id="info-text">Tavsiya etilgan loyihalar</div>
                     </div>
                 </div>
             </div>
@@ -33,9 +33,12 @@
 
         <!-- Main Content -->
         <div id="main-content">
+            
             <!-- Main Page Content -->
             <div id="main-page-content" class="content-max-width">
-
+            <p>Briefni Yuklab Olish
+                <a href="/front/logotipbrief.pdf"><i class="fa fa-download" aria-hidden="true"></i></a>.
+            </p>
                 <!-- Row -->
                 <div class="content-row row_padding_top row_padding_bottom dark-section text-align-center" data-bgcolor="#0c0c0c">
                     <h2 class="big-title has-mask-fill primary-font-title">BOG'LANISH</h2>
@@ -79,7 +82,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             const phoneInput = document.getElementById('phone_number');
-            const pattern = /^\+998([- ])?(90|91|93|94|95|98|99|33|97|71)([- ])?(\d{3})([- ])?(\d{2})([- ])?(\d{2})$/;
+            const pattern = /^\+998[- ]?(90|91|93|94|95|98|99|33|97|71)[- ]?(\d{3})[- ]?(\d{2})[- ]?(\d{2})$/;
 
             // Set initial value to +998
             phoneInput.value = '+998 ';
@@ -93,7 +96,7 @@
                 }
 
                 // Remove invalid characters
-                value = value.replace(/[^\d+ ()-]/g, '');
+                value = value.replace(/[^\d+]/g, '');
 
                 // Format value according to the pattern
                 let match = value.match(/^\+998\s?(90|91|93|94|95|98|99|33|97|71)?\s?(\d{0,3})?\s?(\d{0,2})?\s?(\d{0,2})?/);
@@ -106,17 +109,23 @@
                     value = formattedValue;
                 }
 
-                e.target.value = value;
+                e.target.value = value.trim();
             });
 
             phoneInput.addEventListener('keydown', (e) => {
                 const value = e.target.value;
-                // Prevent user from deleting +998
-                if (e.key === 'Backspace' && value.length <= 9) {
-                    e.preventDefault();
+                // Allow user to clear the input completely
+                if (e.key === 'Backspace' && value.length <= 5) {
+                    phoneInput.value = ''; // Clear the input field
                 }
             });
 
+            document.getElementById('phone-form').addEventListener('submit', (e) => {
+                if (!pattern.test(phoneInput.value)) {
+                    e.preventDefault();
+                    alert('Iltimos, to\'g\'ri telefon raqamini kiriting: +998 (XX) XXX-XX-XX');
+                }
+            });
         });
     </script>
 </x-layouts.main>
