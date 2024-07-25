@@ -71,80 +71,6 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                                         </div>
                                     </div>
                                 @endforeach
-
-                                <div class="overlapping-image">
-                                    <div class="overlapping-image-inner trigger-item" data-centerLine="OPEN">
-                                        <div class="img-mask">
-                                            <a class="slide-link" data-type="page-transition" href="project02.html"></a>
-                                            <div class="section-image trigger-item-link">
-                                                <img src="/front/images/02hero.jpg" class="item-image grid__item-img" alt="">
-                                            </div>
-                                            <img src="/front/images/02hero.jpg" class="grid__item-img grid__item-img--large" alt="">
-                                        </div>
-                                        <div class="slide-caption trigger-item-link-secondary">
-                                            <div class="slide-title primary-font-title"><span>Green Audio</span></div>
-                                            <div class="slide-date"><span>2024</span></div>
-                                            <div class="slide-cat"><span>Fotografiya</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="overlapping-image">
-                                    <div class="overlapping-image-inner trigger-item" data-centerLine="OPEN">
-                                        <div class="img-mask">
-                                            <a class="slide-link" data-type="page-transition" href="project03.html"></a>
-                                            <div class="section-image trigger-item-link">
-                                                <img src="/front/images/03hero.jpg" class="item-image grid__item-img" alt="">
-                                            </div>
-                                            <img src="/front/images/03hero.jpg" class="grid__item-img grid__item-img--large" alt="">
-                                        </div>
-                                        <div class="slide-caption trigger-item-link-secondary">
-                                            <div class="slide-title primary-font-title"><span>Nanotech</span></div>
-                                            <div class="slide-date"><span>2024</span></div>
-                                            <div class="slide-cat"><span>Branding</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="overlapping-image">
-                                    <div class="overlapping-image-inner trigger-item change-header" data-centerLine="OPEN">
-                                        <div class="img-mask">
-                                            <a class="slide-link" data-type="page-transition" href="project04.html"></a>
-                                            <div class="section-image trigger-item-link">
-                                                <img src="/front/images/04hero.jpg" class="item-image grid__item-img" alt="">
-                                                <div class="hero-video-wrapper">
-                                                    <video loop muted class="bgvid">
-                                                        <source src="/front/images/04hero.mp4" type="video/mp4">
-                                                    </video>
-                                                </div>
-                                            </div>
-                                            <img src="/front/images/04hero.jpg" class="grid__item-img grid__item-img--large" alt="">
-                                        </div>
-                                        <div class="slide-caption trigger-item-link-secondary">
-                                            <div class="slide-title primary-font-title"><span>Cool Dude</span></div>
-                                            <div class="slide-date"><span>2024</span></div>
-                                            <div class="slide-cat"><span>Video ishlab chiqarish</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="overlapping-image">
-                                    <div class="overlapping-image-inner trigger-item" data-centerLine="OPEN">
-                                        <div class="img-mask">
-                                            <a class="slide-link" data-type="page-transition" href="project05.html"></a>
-                                            <div class="section-image trigger-item-link">
-                                                <img src="/front/images/05hero.jpg" class="item-image grid__item-img" alt="">
-                                            </div>
-                                            <img src="/front/images/05hero.jpg" class="grid__item-img grid__item-img--large" alt="">
-                                        </div>
-                                        <div class="slide-caption trigger-item-link-secondary">
-                                            <div class="slide-title primary-font-title"><span>Sphere Digital</span></div>
-                                            <div class="slide-date"><span>2024</span></div>
-                                            <div class="slide-cat"><span>Grafik Dizayn</span></div>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
 
                         </div>
@@ -179,7 +105,7 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                 <div class="content-row full row_padding_left row_padding_right dark-section fadeout-element" data-bgcolor="#0c0c0c">
 
                     <div class="list-rotator-wrapper">
-                        <div class="list-rotator-title">BIZNING MAHORAT XIZMATLARIMIZ</div>
+                        <div class="list-rotator-title">BIZNING XIZMATLARIMIZ</div>
                         <div class="list-rotator-pin">
                             <ul class="list-rotator primary-font-title">
                                 @foreach($services as $service)

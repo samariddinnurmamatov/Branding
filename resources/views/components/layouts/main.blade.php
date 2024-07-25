@@ -28,6 +28,7 @@ $contact = \App\Models\Contact::latest()->take(1)->get();
     <link href="/front/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
@@ -137,7 +138,7 @@ $contact = \App\Models\Contact::latest()->take(1)->get();
                                     <i class="fa-solid fa-angle-up"></i>
                                 </div>
                             </div>
-                            <div class="button-text sticky left"><span data-hover="Back Top">Back Top</span></div>
+                            <div class="button-text sticky left"><span data-hover="Birinchiga o'tish">Birinchiga o'tish</span></div>
                         </div>
 
                         <div class="footer-middle">
@@ -146,12 +147,12 @@ $contact = \App\Models\Contact::latest()->take(1)->get();
 
                         <div class="socials-wrap">
                             <div class="socials-icon"><i class="fa-solid fa-share-nodes"></i></div>
-                            <div class="socials-text">Follow Us</div>
+                            <div class="socials-text">Ijtimoiy tarmoqlar</div>
                             <ul class="socials">
                                 @foreach($contact as $con)
-                                    <li><span class="parallax-wrap"><a class="parallax-element" href="{{ $con->telegram }}" target="_blank">Tg</a></span></li>
-                                    <li><span class="parallax-wrap"><a class="parallax-element" href="{{ $con->facebook }}" target="_blank">Fb</a></span></li>
-                                    <li><span class="parallax-wrap"><a class="parallax-element" href="{{ $con->instagram }}">In</a></span></li>
+                                    <li><span class="parallax-wrap"><a class="parallax-element" href="{{ $con->telegram }}" target="_blank"><i class="fa-brands fa-telegram"></i></a></span></li>
+                                    <li><span class="parallax-wrap"><a class="parallax-element" href="{{ $con->facebook }}" target="_blank"><i class="fa-brands fa-facebook"></i></a></span></li>
+                                    <li><span class="parallax-wrap"><a class="parallax-element" href="{{ $con->instagram }}"><i class="fa-brands fa-instagram"></i></a></span></li>
                                 @endforeach
                             </ul>
                         </div>

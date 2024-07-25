@@ -1,6 +1,6 @@
 <x-layouts.admin>
     <div class="container">
-        <h1>Call Records</h1>
+        <h1>Murojat qoldirgan mijozlar ro'yxati</h1>
         <table class="table table-bordered">
             <thead>
             <tr>
@@ -19,7 +19,6 @@
                     <td>{{ $call->description }}</td>
                     <td>{{ $call->phone_number }}</td>
                     <td>
-                        <a href="{{ route('calls.edit', $call->id) }}" class="btn btn-warning">Edit</a>
                         <form action="{{ route('calls.destroy', $call->id) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
