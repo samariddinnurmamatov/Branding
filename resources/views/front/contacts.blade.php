@@ -150,47 +150,53 @@
 
     </div>
     <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            const phoneInput = document.getElementById('phone_number');
-            const pattern = /^\+998([- ])?(90|91|93|94|95|98|99|33|97|71)([- ])?(\d{3})([- ])?(\d{2})([- ])?(\d{2})$/;
+		document.addEventListener('DOMContentLoaded', (event) => {
+			const phoneInput = document.getElementById('phone_number');
+			const pattern = /^\+998[- ]?(90|91|93|94|95|98|99|33|97|71)[- ]?(\d{3})[- ]?(\d{2})[- ]?(\d{2})$/;
 
-            // Set initial value to +998
-            phoneInput.value = '+998 ';
+			// Set initial value to +998
+			phoneInput.value = '+998 ';
 
-            phoneInput.addEventListener('input', (e) => {
-                let value = e.target.value;
+			phoneInput.addEventListener('input', (e) => {
+				let value = e.target.value;
 
-                // Ensure the value always starts with +998
-                if (!value.startsWith('+998 ')) {
-                    value = '+998 ' + value.replace(/^\+998\s*/, '');
-                }
+				// Ensure the value always starts with +998
+				if (!value.startsWith('+998 ')) {
+					value = '+998 ' + value.replace(/^\+998\s*/, '');
+				}
 
-                // Remove invalid characters
-                value = value.replace(/[^\d+ ()-]/g, '');
+				// Remove invalid characters
+				value = value.replace(/[^\d+]/g, '');
 
-                // Format value according to the pattern
-                let match = value.match(/^\+998\s?(90|91|93|94|95|98|99|33|97|71)?\s?(\d{0,3})?\s?(\d{0,2})?\s?(\d{0,2})?/);
-                if (match) {
-                    let formattedValue = '+998 ';
-                    if (match[1]) formattedValue += match[1] + ' ';
-                    if (match[2]) formattedValue += match[2] + (match[2].length === 3 ? ' ' : '');
-                    if (match[3]) formattedValue += match[3] + (match[3].length === 2 ? ' ' : '');
-                    if (match[4]) formattedValue += match[4];
-                    value = formattedValue;
-                }
+				// Format value according to the pattern
+				let match = value.match(/^\+998\s?(90|91|93|94|95|98|99|33|97|71)?\s?(\d{0,3})?\s?(\d{0,2})?\s?(\d{0,2})?/);
+				if (match) {
+					let formattedValue = '+998 ';
+					if (match[1]) formattedValue += match[1] + ' ';
+					if (match[2]) formattedValue += match[2] + (match[2].length === 3 ? ' ' : '');
+					if (match[3]) formattedValue += match[3] + (match[3].length === 2 ? ' ' : '');
+					if (match[4]) formattedValue += match[4];
+					value = formattedValue;
+				}
 
-                e.target.value = value;
-            });
+				e.target.value = value.trim();
+			});
 
-            phoneInput.addEventListener('keydown', (e) => {
-                const value = e.target.value;
-                // Prevent user from deleting +998
-                if (e.key === 'Backspace' && value.length <= 9) {
-                    e.preventDefault();
-                }
-            });
+			phoneInput.addEventListener('keydown', (e) => {
+				const value = e.target.value;
+				// Allow user to clear the input completely
+				if (e.key === 'Backspace' && value.length <= 5) {
+					phoneInput.value = ''; // Clear the input field
+				}
+			});
 
-        });
-    </script>
+			document.getElementById('phone-form').addEventListener('submit', (e) => {
+				if (!pattern.test(phoneInput.value)) {
+					e.preventDefault();
+					alert('Please enter a valid phone number: +998 (XX) XXX-XX-XX');
+				}
+			});
+		});
+	</script>
     <!--/Main -->
 </x-layouts.main>
