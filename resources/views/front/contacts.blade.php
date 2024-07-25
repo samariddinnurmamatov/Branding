@@ -60,36 +60,27 @@
 
                         <div id="message"></div>
 
-                        <form method="post" action="contact.php" name="contactform" id="contactform">
+                        <form method="post" action="{{ route('callcus.store') }}" name="contactform" id="contactform">
+                            @csrf
                             <div class="name-box">
-                                <input name="name" type="text" id="name" size="30" value="" placeholder="What's Your Name"><label class="input_label"></label>
+                                <input name="full_name" type="text" id="name" size="30" value="" placeholder="What's Your Name"><label class="input_label"></label>
                             </div>
                             <div class="email-box">
-                                <input name="email" type="text" id="email" size="30" value="" placeholder="Your Email"><label class="input_label"></label>
+                                <input name="phone_number" type="text" id="phone_number" size="30" value="" placeholder="phone_number"><label class="input_label"></label>
                             </div>
                             <div class="message-box">
-                                <textarea name="comments" cols="40" rows="4" id="comments" placeholder="Tell Us About Your Project" ></textarea><label class="input_label slow"></label>
-                            </div>
-
-                            <div class="verify-box">
-                                <ul class="verify-sum">
-                                    <li>1</li>
-                                    <li>+</li>
-                                    <li>3</li>
-                                    <li>=</li>
-                                </ul>
-                                <input name="verify" type="text" id="verify" size="4" value=""/>
-                                <p class="required"><span>*</span> Captcha Validation</p>
+                                <textarea name="description" cols="40" rows="4" id="comments" placeholder="Tell Us About Your Project"></textarea><label class="input_label slow"></label>
                             </div>
 
                             <div class="button-box">
                                 <div class="clapat-button-wrap parallax-wrap link">
                                     <div class="clapat-button parallax-element">
-                                        <div class="button-border rounded outline "><input type="submit" class="send_message" id="submit" value="Send Message" /></div>
+                                        <button class="button-border rounded outline" type="submit">Send Message</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
+
 
                     </div>
                     <!--/Contact Formular -->

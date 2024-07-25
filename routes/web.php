@@ -13,6 +13,8 @@ use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TeamController;
 //use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CallController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -49,6 +51,7 @@ Route::middleware(['checkRole:admin', 'auth'])->group(function () {
         Route::resource('portfolios', PortfolioController::class);
         Route::resource('teams', TeamController::class);
         Route::resource('logos', LogoController::class);
+        Route::resource('calls', CallController::class);
 //        Route::get('/profile', [UserController::class, 'index'])->name('user-index');
 //        Route::resource('/profile', UserController::class);
         Route::resource('contacts', ContactController::class);
@@ -66,7 +69,8 @@ Route::middleware(['checkRole:admin', 'auth'])->group(function () {
 Route::get('/', [MainController::class, 'index'])->name('index');
 Route::get('/about', [MainController::class, 'about'])->name('about');
 Route::get('/brief', [MainController::class, 'brief'])->name('brief');
-Route::post('/brief', [MainController::class, 'store'])->name('brief.store');
+Route::get('/callcus', [CallController::class, 'create'])->name('call');
+Route::post('/callcus', [CallController::class, 'store'])->name('callcus.store');
 Route::get('/portfolio', [MainController::class, 'portfolio'])->name('portfolio');
 Route::get('/portfolio/{portfolio}', [MainController::class, 'singlePortfolio'])->name('singlePortfolio');
 Route::get('/contacts', [MainController::class, 'contacts'])->name('contacts');
