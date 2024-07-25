@@ -96,6 +96,12 @@ $lang = \Illuminate\Support\Facades\App::getLocale();
                     </a>
                 </li>
                 <li class="menu-item">
+                    <a href="/admin/calls" class="menu-link waves-effect waves-light">
+                        <span class="menu-icon"><i class="fa fa-contact-card"></i></span>
+                        <span class="menu-text"> Bog'lanishlar </span>
+                    </a>
+                </li>
+                <li class="menu-item">
                     <a href="/admin/teams" class="menu-link waves-effect waves-light">
                         <span class="menu-icon"><i class="fa fa-users"></i></span>
                         <span class="menu-text"> Bizning jamoa </span>
