@@ -57,7 +57,7 @@
 
                 <!-- Row -->
                 <div class="content-row row_padding_top row_padding_bottom dark-section text-align-center" data-bgcolor="#0c0c0c">
-                    <h2 class="big-title has-mask-fill primary-font-title">Gaplashaylik</h2>
+                    <h2 class="big-title has-mask-fill primary-font-title">BOG'LANISH</h2>
                     <hr>
                     <hr>
                     <!-- Contact Formular -->
