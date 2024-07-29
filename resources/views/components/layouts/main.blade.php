@@ -81,16 +81,11 @@ $contact = \App\Models\Contact::latest()->take(1)->get();
                             <div class="outer">
                                 <div class="inner">
                                     <ul data-breakpoint="10025" class="flexnav">
-                                        <li class="link menu-timeline"><a class="" href="#"><div class="before-span"><span data-hover="Portfolio">Portfolio</span></div></a>
-                                            <ul>
-                                                <li><a class="ajax-link active" href="/" data-type="page-transition">Overlapping Gallery</a></li>
-                                                <li><a class="ajax-link" href="/portfolio" data-type="page-transition">Portfolio Grid</a></li>
-                                                <li><a class="ajax-link" href="{{ route('singlePortfolio', $portfolio->id) }}" data-type="page-transition">Archive Gallery</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition" href="/about"><div class="before-span"><span data-hover="About">About</span></div></a></li>
-                                        <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition" href="/contacts"><div class="before-span"><span data-hover="Contact">Contact</span></div></a></li>
-                                        <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition" href="/brief"><div class="before-span"><span data-hover="Brief">Brief</span></div></a></li>
+                                        <li class="link menu-timeline"><a class="ajax-link" href="/">Home</a></li>
+                                        <li class="link menu-timeline"><a class="ajax-link" href="/portfolio">Portfolio</a></li>
+                                        <li class="link menu-timeline"><a class="ajax-link" href="/about"><div class="before-span"><span data-hover="About">About</span></div></a></li>
+                                        <li class="link menu-timeline"><a class="ajax-link" href="/contacts"><div class="before-span"><span data-hover="Contact">Contact</span></div></a></li>
+                                        <li class="link menu-timeline"><a class="ajax-link" href="/brief"><div class="before-span"><span data-hover="Brief">Brief</span></div></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -210,7 +205,7 @@ $contact = \App\Models\Contact::latest()->take(1)->get();
 <script src="/front/js/scripts.js"></script>
 
 <div id="awwwards" class="link" style="position: fixed; z-index: 999; transform: translateY(-50%); top: 50%;  right: 0">
-    <a href="https://dora.uz" target="_blank">
+    <a href="/contacts" target="_blank">
         <svg width="53.08" height="171.358">
             <path class="js-color-bg" fill="#E73C37" d="M0 0h53.08v171.358H0z"></path>
             <g class="js-color-text" fill="#fff">

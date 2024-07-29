@@ -152,7 +152,7 @@
     <script>
 		document.addEventListener('DOMContentLoaded', (event) => {
 			const phoneInput = document.getElementById('phone_number');
-			const pattern = /^\+998[- ]?(90|91|93|94|95|98|99|33|97|71)[- ]?(\d{3})[- ]?(\d{2})[- ]?(\d{2})$/;
+            const pattern = /^\+998[- ]?(90|91|93|94|95|98|99|33|97|71|88|20|75|50)[- ]?(\d{3})[- ]?(\d{2})[- ]?(\d{2})$/;
 
 			// Set initial value to +998
 			phoneInput.value = '+998 ';
@@ -169,7 +169,7 @@
 				value = value.replace(/[^\d+]/g, '');
 
 				// Format value according to the pattern
-				let match = value.match(/^\+998\s?(90|91|93|94|95|98|99|33|97|71)?\s?(\d{0,3})?\s?(\d{0,2})?\s?(\d{0,2})?/);
+                let match = value.match(/^\+998\s?(90|91|93|94|95|98|99|33|97|71|88|20|75|50)?\s?(\d{0,3})?\s?(\d{0,2})?\s?(\d{0,2})?/);
 				if (match) {
 					let formattedValue = '+998 ';
 					if (match[1]) formattedValue += match[1] + ' ';
